@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160429215452) do
+ActiveRecord::Schema.define(version: 20160430144019) do
 
   create_table "articles", force: :cascade do |t|
     t.string   "title"
@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 20160429215452) do
   end
 
   create_table "authors", force: :cascade do |t|
-    t.string   "usename",          null: false
+    t.string   "username",         null: false
     t.string   "email",            null: false
     t.string   "crypted_password", null: false
     t.string   "salt",             null: false
